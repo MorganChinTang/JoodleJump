@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
         {
             Destroy(platform);
         }
-        activePlatforms.Clear();
+        //activePlatforms.Clear();
     }
 
 }
