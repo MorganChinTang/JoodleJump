@@ -22,4 +22,12 @@ public class AdsManager : MonoBehaviour, IUnityAdsInitializationListener
         Debug.Log($"Error initializing Unity Ads: {error.ToString()} - {message}");
     }
 
+    public void PlayAd()
+    {
+        RewardedAd rewardedAd = GetComponent<RewardedAd>();
+        if (rewardedAd != null)
+        {
+            rewardedAd.ShowAd();
+        }
+    }
 }

@@ -6,9 +6,7 @@ public class Platform : MonoBehaviour
 {
     public float jumpForce = 10f;
     public GameObject playerPrefab;
-    public GameObject platformPrefab;
-    public float despawnDistance =70f;
-    private float despawnThreshold;
+    private float despawnDistance = 70f;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -21,15 +19,17 @@ public class Platform : MonoBehaviour
         }
     }
 
-
-    // Update is called once per frame
     void Update()
     {
-        despawnThreshold = playerPrefab.transform.position.y - despawnDistance;
-        if (platformPrefab.transform.position.y < despawnThreshold)
+        if (playerPrefab != null && GameManager.Instance != null)
         {
-            GameObject.Destroy(platformPrefab);
-            GameManager.Instance.activePlatforms.Remove(platformPrefab);
+            float playerY = playerPrefab.transform.position.y;
+            
+            // Check if this platform is too far below the player
+            if (transform.position.y < playerY - despawnDistance)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

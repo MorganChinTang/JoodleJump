@@ -9,8 +9,8 @@ public class RewardedAd : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLis
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        LoadAd();
         showAdButton.interactable = false;
-
     }
 
     public void LoadAd()
@@ -31,7 +31,6 @@ public class RewardedAd : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLis
 
     public void ShowAd()
     {
-        showAdButton.interactable = false;
         Advertisement.Show(androidAdId, this);
     }
 
