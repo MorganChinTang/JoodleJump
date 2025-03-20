@@ -9,9 +9,11 @@ Joodle Jump is a simplified spinoff of the classic **Doodle Jump**, reimagined a
 - **Objective:**  
   - Keep climbing higher and higher without falling.  
   - Challenge yourself to beat your previous high scores!  
+![joodlejump_demo_OptimumPrimePlus](https://github.com/user-attachments/assets/d71bee7f-e55e-4dfb-aad9-5d3e3b468af9)
 
 ## 💡 About the Project
 This is my first attempt at creating a mobile game, and I'm learning a lot along the way. While I have some experience making PC games, the mobile platform presents unique challenges. However, I am excited to keep improving and expanding my skills with each new project.  
+Man I know I didn't do really well on this one but I've been really sick for this project and the meds to stop me from coughing makes me sleepy :cccc
 
 ## 🔨 Built With
 - **Unity:** Game Engine used for development.  
